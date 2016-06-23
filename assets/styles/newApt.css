@@ -38,4 +38,15 @@
 .fa {
   color: #868A88; }
 
+.saveAptButton {
+  background-color: #A2B9AE;
+  width: 375px;
+  height: 60px;
+  margin-top: 161px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  font-size: 25px; }
+
 /*# sourceMappingURL=newApt.css.map */
