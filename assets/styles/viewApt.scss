@@ -60,7 +60,7 @@ body{
   //border-bottom: none;
   height: 667px;
   width: 375px;
-  background: $grey;
+  // background: $grey;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   .aptHeader {
@@ -115,16 +115,42 @@ body{
   }
   .map{
     justify-content: center;
-    width: 90%;
+    width: 70%;
     margin-top: 16px;
   }
+ }
+ .forcast {
+   display: block;
+   width: 80%;
+   height: 55px;
+   margin-top: 25px;
+  //  margin-left: auto;
+  //  margin-right: auto;
+  //  border: 1px solid black;
+   background: $grey;
+   img{
+     display: inline-block;
+     width: 15%;
+     margin-top: 8px;
+   }
+   .forcastDetails {
+     display: inline-block;
+     font-size: 1.5em;
+     opacity: .5;
+     vertical-align: top;
+     padding-top: 15px;
+    //  font-weight: 700;
+     width: 70%;
+     text-align: center;
+     margin-right: 0;
+   }
  }
  .editApt{
    position: absolute;
    width: 100%;
    height: 75px;
-   background: #ff3333;
-   border: 1px solid #ff3333;
+   background: #9e3863;
+   border: 1px solid #9e3863;
    vertical-align: baseline;
    bottom: 0;
    left:0;
