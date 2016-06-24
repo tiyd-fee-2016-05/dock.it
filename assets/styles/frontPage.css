@@ -48,6 +48,10 @@ table {
 body {
   font-family: 'Raleway', sans-serif; }
 
+a {
+  text-decoration: none;
+  color: #a2b9ae; }
+
 .container {
   border: 1px solid black;
   height: 667px;
