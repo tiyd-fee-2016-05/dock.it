@@ -13,6 +13,8 @@ $(".saveAptButton").click(function(e){
     street: streetJson,
     location: locationJson
   }
+  //this was inspired by stackoverflow here https://stackoverflow.com/questions/12162786/adding-new-objects-to-localstorage
+  // once again stackoverflow is BAE
   var oldAppointments = JSON.parse(localStorage.getItem('appointments')) || [];
   oldAppointments.push(newApt);
   localStorage.setItem('appointments', JSON.stringify(oldAppointments));
