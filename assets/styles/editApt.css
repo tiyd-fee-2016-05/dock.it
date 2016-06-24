@@ -1,0 +1,91 @@
+.wrapper {
+  border: solid 1px #868A88;
+  border-radius: 5px;
+  height: 667px;
+  width: 375px;
+  margin: 5px; }
+
+.header {
+  color: #868A88;
+  font-size: 25px;
+  font-weight: lighter;
+  font-family: Raleway, sans-serif;
+  text-align: center;
+  padding-top: 15px;
+  width: 90%;
+  height: 50px;
+  border-bottom: solid 1px #868A88;
+  border-color: #868A88;
+  margin: 0px auto; }
+
+.v {
+  text-align: left;
+  margin-right: 50px;
+  font-size: 40px; }
+
+.newAppointmentTitle {
+  text-align: center;
+  margin-right: 50px; }
+
+.greyText {
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  text-align: left;
+  color: #868A88;
+  font-weight: 100;
+  opacity: .7;
+  padding-top: 15px;
+  padding-left: 45px;
+  padding-bottom: 5px; }
+
+.textBoxTitle, .textBoxStreet, .textBoxCityState, .textBoxDate, .textBoxTime {
+  color: #868A88;
+  opacity: .7;
+  width: 80%;
+  height: 40px;
+  margin-left: 10%;
+  font-size: 30px;
+  text-align: right; }
+
+.horizontalDivider {
+  height: 2px;
+  width: 90%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  opacity: .7;
+  border-bottom: solid 1px #868A88;
+  border-color: #868A88;
+  margin: 12px 5% 14px 5%; }
+
+.fa {
+  color: #868A88; }
+
+.saveButton {
+  background-color: #A2B9AE;
+  width: 187.5px;
+  height: 45px;
+  margin-top: 20px;
+  border-radius: 0 0 5px 0;
+  color: white;
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 19px;
+  float: right; }
+
+.deleteButton {
+  background-color: #9E3863;
+  width: 187.5px;
+  height: 45px;
+  margin-top: 20px;
+  border-radius: 0 0 0 5px;
+  color: white;
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 19px;
+  float: left; }
+
+/*# sourceMappingURL=editApt.css.map */

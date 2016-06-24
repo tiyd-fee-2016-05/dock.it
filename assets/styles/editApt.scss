@@ -1,0 +1,105 @@
+$textColor:#868A88;
+$seafoamColor:#A2B9AE;
+$fontRaleway:Raleway,sans-serif;
+
+.wrapper{
+  border:solid 1px $textColor;
+  border-radius: 5px;
+  height:667px;
+  width:375px;
+  margin: 5px;
+}
+
+.header{
+  color:$textColor;
+  font-size: 25px;
+  font-weight: lighter;
+  font-family: $fontRaleway;
+  text-align: center;
+  padding-top: 15px;
+  width:90%;
+  height:50px;
+  border-bottom:  solid 1px $textColor;
+  border-color: $textColor;
+  margin: 0px auto;
+}
+
+.v{
+  text-align: left;
+  margin-right:50px;
+  font-size: 40px;
+}
+
+.newAppointmentTitle{
+  text-align: center;
+  margin-right: 50px;
+}
+
+.greyText{
+    font-family: $fontRaleway;
+    font-size: 20px;
+    text-align: left;
+    color:$textColor;
+    font-weight: 100;
+    opacity:.7;
+    padding-top: 15px;
+    padding-left: 45px;
+    padding-bottom: 5px;
+
+}
+
+.textBoxTitle, .textBoxStreet, .textBoxCityState, .textBoxDate, .textBoxTime{
+    color:$textColor;
+    opacity:.7;
+    width:80%;
+    // width: 250px;
+    height:40px;
+    margin-left: 10%;
+  font-size: 30px;
+    text-align: right;
+}
+
+.horizontalDivider{
+  height: 2px;
+  width:90%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  opacity:.7;
+  border-bottom:  solid 1px $textColor;
+  border-color: $textColor;
+  margin: 12px 5% 14px 5%;
+}
+
+.fa{
+color:$textColor;
+}
+
+.saveButton{
+  background-color: $seafoamColor;
+  width:187.5px;
+  height:45px;
+  margin-top: 20px;
+  border-radius: 0 0 5px 0;
+  color:white;
+  text-align: center;
+  font-family: $fontRaleway;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top:19px;
+  float:right;
+}
+
+.deleteButton{
+  background-color: #9E3863;
+  width:187.5px;
+  height:45px;
+  margin-top: 20px;
+  border-radius: 0 0 0 5px;
+  color:white;
+  text-align: center;
+  font-family: $fontRaleway;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top:19px;
+  float:left;
+}
