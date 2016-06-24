@@ -1,12 +1,12 @@
 .wrapper {
-  border: solid 1px #868A88;
+  border: solid 1px #666;
   border-radius: 5px;
   height: 667px;
   width: 375px;
   margin: 5px; }
 
 .header {
-  color: #868A88;
+  color: #666;
   font-size: 25px;
   font-weight: lighter;
   font-family: Raleway, sans-serif;
@@ -14,39 +14,63 @@
   padding-top: 15px;
   width: 90%;
   height: 50px;
-  border-bottom: solid 1px #868A88;
-  border-color: #868A88;
+  border-bottom: solid 1px #666;
+  border-color: #666;
   margin: 0px auto; }
+
+.v {
+  text-align: left;
+  margin-right: 50px;
+  font-size: 40px; }
+
+.newAppointmentTitle {
+  text-align: center;
+  margin-right: 35px; }
 
 .greyText {
   font-family: Raleway, sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   text-align: left;
-  color: #868A88;
+  color: #666;
   font-weight: 100;
-  opacity: .7;
+  opacity: .5;
   padding-top: 15px;
-  padding-left: 20px; }
+  padding-left: 45px;
+  padding-bottom: 5px; }
 
 .textBoxTitle, .textBoxStreet, .textBoxCityState, .textBoxDate, .textBoxTime {
-  color: #868A88;
+  color: #666;
   opacity: .7;
-  width: 90%;
+  width: 80%;
   height: 40px;
-  text-align: center; }
+  margin-left: 10%;
+  font-size: 2em;
+  text-align: right;
+  padding-right: 10px; }
+
+.horizontalDivider {
+  height: 2px;
+  width: 90%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  opacity: .7;
+  border-bottom: solid 1px #666;
+  border-color: #666;
+  margin: 12px 5% 14px 5%; }
 
 .fa {
-  color: #868A88; }
+  color: #666; }
 
 .saveAptButton {
   background-color: #A2B9AE;
   width: 375px;
-  height: 60px;
-  margin-top: 161px;
-  border-radius: 5px;
+  height: 45px;
+  margin-top: 28px;
+  border-radius: 0 0 5px 5px;
   color: white;
   text-align: center;
   font-family: Raleway, sans-serif;
-  font-size: 25px; }
+  font-size: 25px;
+  padding-top: 19px; }
 
 /*# sourceMappingURL=newApt.css.map */
