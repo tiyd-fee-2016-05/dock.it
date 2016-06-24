@@ -2,7 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,108 +15,92 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+  display: block; }
+
 body {
-	line-height: 1;
-}
+  line-height: 1; }
+
 ol, ul {
-	list-style: none;
-}
+  list-style: none; }
+
 blockquote, q {
-	quotes: none;
-}
+  quotes: none; }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
-}
+  content: '';
+  content: none; }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-// End OF RESETTTTTTTT
-$grey: #f6f6f6;
-$green: #a2b9ae;
-body{
-  font-family: 'Raleway', sans-serif;
-}
-.container{
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: 'Raleway', sans-serif; }
+
+.container {
   border: 1px solid black;
   height: 667px;
   width: 375px;
-  background: $grey;
-  header {
+  background: #f6f6f6; }
+  .container header {
     display: block;
     width: 90%;
     border-bottom: 1px solid #dfdfdf;
     margin-left: auto;
     margin-right: auto;
     height: 55px;
-    padding-bottom: 10px;
-    .header {
+    padding-bottom: 10px; }
+    .container header .header {
       font-size: 2em;
       display: inline-block;
       width: 49%;
-      // margin: 0;
       margin-left: 100px;
-      color: $green;
-      padding: 25px 0px 5px 0px;
-    }
-    .newApt {
+      color: #a2b9ae;
+      padding: 25px 0px 5px 0px; }
+    .container header .newApt {
       font-size: 2.5em;
       display: inline-block;
       width: 20%;
       margin-right: 0;
-      color: $green;
-    }
+      color: #a2b9ae; }
 
-  }
-}
 .search {
   margin-top: 10px;
-  // padding-top: 10px;
   margin-left: 20px;
-  margin-bottom: 20px;
-  .searchBox {
+  margin-bottom: 20px; }
+  .search .searchBox {
     text-align: right;
     font-size: 1.2em;
     height: 30px;
     width: 90%;
-    padding-right: 10px;
-    // padding-top: 10px;
-  }
-}
-.weather{
+    padding-right: 10px; }
+
+.weather {
   display: inline-block;
   width: 20%;
-  // border-top: 1px solid white;
-  // border-bottom: 1px solid white;
-  // border-left: 1px solid white;
   height: 85px;
-  background: $green;
+  background: #a2b9ae;
   margin-top: 40px;
   margin-right: -5px;
-  margin-left: 20px;
-
-  .time {
+  margin-left: 20px; }
+  .weather .time {
     font-size: 20px;
     font-weight: 700;
     color: white;
     padding-bottom: 5px;
-    text-align: center;
-  }
-}
+    text-align: center; }
+
 .appointment {
   display: inline-block;
   vertical-align: top;
@@ -125,37 +108,32 @@ body{
   width: 65%;
   margin-left: 0;
   margin-right: auto;
-  // border: 1px solid white;
   margin-top: 40px;
   margin-bottom: 10px;
-  background: white;
-
-  .aptContent {
-    display:inline-block;
+  background: white; }
+  .appointment .aptContent {
+    display: inline-block;
     color: green;
     width: 100%;
-    margin-left: 20px;
-    .aptTitle{
+    margin-left: 20px; }
+    .appointment .aptContent .aptTitle {
       width: 100%;
       font-size: 1.3em;
       font-weight: 700;
       color: #666;
-      margin-top: 10px;
-    }
-    .location{
+      margin-top: 10px; }
+    .appointment .aptContent .location {
       font-size: .9em;
       opacity: .5;
       color: #666;
-      margin-top: 15px;
-    }
-  }
-}
-.date{
+      margin-top: 15px; }
+
+.date {
   color: #666;
   width: 100%;
   text-align: center;
   font-size: 1.3em;
   opacity: .5;
-  padding-top: 40px;
+  padding-top: 40px; }
 
-}
+/*# sourceMappingURL=frontPage.css.map */
