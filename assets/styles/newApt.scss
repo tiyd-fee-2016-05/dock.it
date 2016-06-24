@@ -2,6 +2,10 @@ $textColor:#666;
 $seafoamColor:#A2B9AE;
 $fontRaleway:Raleway,sans-serif;
 
+body{
+  font-family: $fontRaleway;
+}
+
 .wrapper{
   border:solid 1px $textColor;
   border-radius: 5px;
@@ -52,16 +56,23 @@ a{
 
 }
 
+::-webkit-input-placeholder{
+  font-family: FontAwesome;
+  text-align: right;
+}
+
+
 .textBoxTitle, .textBoxStreet, .textBoxCityState, .textBoxDate, .textBoxTime{
+
   color:$textColor;
   opacity:.7;
   width:80%;
   height:40px;
   margin-left: 10%;
   font-size: 2em;
-  text-align: right;
+  text-align: left;
   padding-right: 10px;
-  font-family: $fontRaleway;
+  // font-family: $fontRaleway;
 }
 
 .horizontalDivider{
