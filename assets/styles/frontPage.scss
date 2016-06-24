@@ -52,6 +52,10 @@ $green: #a2b9ae;
 body{
   font-family: 'Raleway', sans-serif;
 }
+a {
+  text-decoration: none;
+  color: $green;
+}
 .container{
   border: 1px solid black;
   height: 667px;
