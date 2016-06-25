@@ -88,17 +88,22 @@ a {
 
   }
 }
+::-webkit-input-placeholder{
+	font-family: FontAwesome;
+	text-align: right;
+}
 .search {
   margin-top: 10px;
   // padding-top: 10px;
   margin-left: 20px;
   margin-bottom: 20px;
   .searchBox {
-    text-align: right;
+    text-align: left;
     font-size: 1.2em;
     height: 30px;
     width: 90%;
     padding-right: 10px;
+		opacity: .5;
     // padding-top: 10px;
   }
 }
