@@ -1,16 +1,29 @@
 var idNumber = 0
 $(document).ready(function(){
-  appointments = JSON.parse(localStorage.getItem('appointments'))
+  appointments = JSON.parse(localStorage.getItem('appointments'));
+  // console.log(JSON.parse(localStorage.getItem('appointments').date));
+  var sortedAppointment = appointments.sort(function(a,b){
+    appointments = JSON.parse(localStorage.getItem('appointments'));
+    keyA= new Date (a.date);    // inspired by bae at stackoverflow
+    keyB= new Date (b.date);    //http://stackoverflow.com/questions/8837454/sort-array-of-objects-by-single-key-with-date-value
+    return keyA-keyB;
+    console.log(sortedAppointment);
+  });
+  // console.log(appointments.date[i]);
+   console.log(sortedAppointment)
+
   for(var i= 0; i < appointments.length ; i++)
   $(".content").append(
     '<a href="viewApt.html"><div class="weather" id="' + i + '"><p class="time">' + appointments[i].time + '</p></div>' +
     '<div class="appointment" id="'+ i +'"><div class="aptContent" id="'+ i +'"><p class="aptTitle">' + appointments[i].description +'</p><p class="location">' + appointments[i].street + ' ' + appointments[i].location + '</p></div></div></a>'
   );
+  // for(var z= 0; z < appointments.length ; z++)
+  // console.log(appointments[z].time);
   $(".appointment").click(function(){
     idNumber = $(this).attr('id');
     localStorage.setItem('id', idNumber);
     console.log(idNumber);
-    // viewFunction(idNumber);
+
 
   });
   console.log(appointments);
