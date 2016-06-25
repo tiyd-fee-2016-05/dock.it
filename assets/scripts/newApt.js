@@ -1,5 +1,5 @@
 $(".saveAptButton").click(function(e){
-  e.preventDefault();
+  // e.preventDefault();
   var dateJson = $(".textBoxDate").val()
   var timeJson = $(".textBoxTime").val()
   var descriptionJson = $(".textBoxTitle").val()
@@ -19,6 +19,7 @@ $(".saveAptButton").click(function(e){
   oldAppointments.push(newApt);
   localStorage.setItem('appointments', JSON.stringify(oldAppointments));
   console.log(newApt);
+
 
 })
 
