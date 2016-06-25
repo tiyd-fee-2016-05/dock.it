@@ -50,7 +50,7 @@ a {
 
 .textBoxTitle, .textBoxStreet, .textBoxCityState, .textBoxDate, .textBoxTime {
   color: #666;
-  opacity: .7;
+  opacity: .5;
   width: 80%;
   height: 40px;
   margin-left: 10%;
@@ -63,7 +63,7 @@ a {
   width: 90%;
   margin-top: 10px;
   margin-bottom: 10px;
-  opacity: .7;
+  opacity: .5;
   border-bottom: solid 1px #666;
   border-color: #666;
   margin: 12px 5% 14px 5%; }
