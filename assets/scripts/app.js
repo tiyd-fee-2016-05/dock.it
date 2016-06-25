@@ -1,16 +1,18 @@
+appointments = JSON.parse(localStorage.getItem('appointments'));
+var sortedAppointments = appointments.sort(function(a,b){
+  appointments = JSON.parse(localStorage.getItem('appointments'));
+  keyA= new Date (a.date);    // inspired by bae at stackoverflow
+  keyB= new Date (b.date);    //http://stackoverflow.com/questions/8837454/sort-array-of-objects-by-single-key-with-date-value
+  return keyA-keyB;
+});
+localStorage.setItem('appointments', JSON.stringify(sortedAppointments))
+// console.log(appointments.date[i]);
+ console.log(sortedAppointments)
 var idNumber = 0
 $(document).ready(function(){
   appointments = JSON.parse(localStorage.getItem('appointments'));
   // console.log(JSON.parse(localStorage.getItem('appointments').date));
-  var sortedAppointment = appointments.sort(function(a,b){
-    appointments = JSON.parse(localStorage.getItem('appointments'));
-    keyA= new Date (a.date);    // inspired by bae at stackoverflow
-    keyB= new Date (b.date);    //http://stackoverflow.com/questions/8837454/sort-array-of-objects-by-single-key-with-date-value
-    return keyA-keyB;
-    console.log(sortedAppointment);
-  });
-  // console.log(appointments.date[i]);
-   console.log(sortedAppointment)
+
 
   for(var i= 0; i < appointments.length ; i++)
   $(".content").append(
