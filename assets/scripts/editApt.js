@@ -18,30 +18,36 @@ $(document).ready(function(){
 
   // localStorage.setItem('appointments', JSON.stringify(appointments));
   console.log(appointments);
-  $(".saveButton").click(function(e){
-    // e.preventDefault(e);
-      // e.preventDefault();
-      var dateJson = $(".textBoxDate").val()
-      var timeJson = $(".textBoxTime").val()
-      var descriptionJson = $(".textBoxTitle").val()
-      var streetJson = $(".textBoxStreet").val()
-      var locationJson = $(".textBoxCityState").val()
 
-      var editApt = {
-        date: dateJson,
-        time: timeJson,
-        description: descriptionJson,
-        street: streetJson,
-        location: locationJson
-      }
-      //this was inspired by stackoverflow here https://stackoverflow.com/questions/12162786/adding-new-objects-to-localstorage
-      // once again stackoverflow is BAE
-      var oldAppointments = JSON.parse(localStorage.getItem('appointments')) || [];
-      oldAppointments.push(editApt);
-      localStorage.setItem('appointments', JSON.stringify(oldAppointments));
-      console.log(editApt);
-    })
 })
+$(".saveButton").click(function(e){
+    // e.preventDefault(e);
+    // e.preventDefault();
+    appointments = JSON.parse(localStorage.getItem('appointments'));
+    appointments.splice(x, 1);
+    var dateJson = $(".textBoxDate").val()
+    var timeJson = $(".textBoxTime").val()
+    var descriptionJson = $(".textBoxTitle").val()
+    var streetJson = $(".textBoxStreet").val()
+    var locationJson = $(".textBoxCityState").val()
+
+    var editApt = {
+      date: dateJson,
+      time: timeJson,
+      description: descriptionJson,
+      street: streetJson,
+      location: locationJson
+    }
+  //inspired by http://stackoverflow.com/questions/5767325/remove-a-particular-element-from-an-array-in-javascript
+    //this was inspired by stackoverflow here https://stackoverflow.com/questions/12162786/adding-new-objects-to-localstorage
+    // once again stackoverflow is BAE
+    console.log(appointments)
+    var oldAppointments = appointments || [];
+    oldAppointments.push(editApt);
+    localStorage.setItem('appointments', JSON.stringify(oldAppointments));
+    console.log(editApt)
+    console.log(oldAppointments);
+  })
 // var backCount = 0
 // $(".v").click(function(e){
 //   //e.preventDefault(e);
