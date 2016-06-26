@@ -4,6 +4,7 @@ $fontRaleway:Raleway,sans-serif;
 
 body{
   font-family: $fontRaleway;
+
 }
 
 .wrapper{
@@ -32,10 +33,12 @@ body{
   text-align: left;
   margin-right:50px;
   font-size: 40px;
+  color: $seafoamColor;
 }
 
 a{
   text-decoration: none;
+  color: $seafoamColor;
 }
 
 .newAppointmentTitle{
@@ -101,4 +104,8 @@ a{
   font-family: $fontRaleway;
   font-size: 25px;
   padding-top:19px;
+  a{
+    color: white;
+    text-decoration: none;
+  }
 }
