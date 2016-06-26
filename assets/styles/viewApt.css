@@ -63,6 +63,9 @@ body {
     height: 55px;
     padding-bottom: 10px;
     opacity: .5; }
+    .container .aptHeader a {
+      text-decoration: none;
+      color: #a2b9ae; }
     .container .aptHeader .backButton {
       display: inline-block;
       font-size: 2em;
@@ -98,11 +101,11 @@ body {
       margin-top: 16px; }
   .container .forcast {
     display: block;
-    width: 80%;
-    height: 55px;
+    width: 92%;
+    height: 20%;
     margin-top: 25px;
     background: #f6f6f6; }
-    .container .forcast img {
+    .container .forcast .icon {
       display: inline-block;
       width: 15%;
       margin-top: 8px; }
@@ -113,7 +116,6 @@ body {
       vertical-align: top;
       padding-top: 15px;
       width: 70%;
-      text-align: center;
       margin-right: 0; }
   .container .editApt {
     position: absolute;
@@ -127,6 +129,9 @@ body {
     width: 375px;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px; }
+    .container .editApt a {
+      text-decoration: none;
+      color: white; }
     .container .editApt .edit {
       text-align: center;
       font-size: 2em;

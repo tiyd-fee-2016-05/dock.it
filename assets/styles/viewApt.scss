@@ -73,6 +73,10 @@ body{
     //padding-top:25px;
     padding-bottom: 10px;
     opacity: .5;
+		a{
+			text-decoration: none;
+			color: $green;
+		}
     .backButton {
       // color: red;
       display: inline-block;
@@ -121,14 +125,15 @@ body{
  }
  .forcast {
    display: block;
-   width: 80%;
-   height: 55px;
+   width: 92%;
+   height: 20%;
    margin-top: 25px;
   //  margin-left: auto;
   //  margin-right: auto;
   //  border: 1px solid black;
    background: $grey;
-   img{
+	 //overflow: auto;
+   .icon{
      display: inline-block;
      width: 15%;
      margin-top: 8px;
@@ -141,7 +146,7 @@ body{
      padding-top: 15px;
     //  font-weight: 700;
      width: 70%;
-     text-align: center;
+    //  text-align: center;
      margin-right: 0;
    }
  }
@@ -157,6 +162,10 @@ body{
    width: 375px;
    border-bottom-right-radius: 5px;
    border-bottom-left-radius: 5px;
+	 a{
+		 text-decoration: none;
+		 color: white;
+	 }
    .edit{
      text-align: center;
      font-size: 2em;

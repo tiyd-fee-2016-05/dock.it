@@ -49,12 +49,16 @@ table {
 // End OF RESETTTTTTTT
 $grey: #f6f6f6;
 $green: #a2b9ae;
+@media (max-width: 400px) {
 body{
   font-family: 'Raleway', sans-serif;
 }
 a {
   text-decoration: none;
   color: $green;
+}
+.phoneWarning{
+	display: none;
 }
 .container{
   border: 1px solid black;
@@ -192,4 +196,28 @@ a{
   opacity: .5;
   padding-top: 40px;
 
+}
+}
+@media (min-width: 401px){
+	.phoneWarning{
+		display: block;
+		font-size: 3em;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		color: $green;
+		.fa-anchor{
+			font-size: .3em;
+			color: black;
+			opacity: .5;
+		}
+		h1{
+		box-shadow: 0px 5px 20px $green;
+	}
+
+
+	}
+	.container{
+		display:none;
+	}
 }
