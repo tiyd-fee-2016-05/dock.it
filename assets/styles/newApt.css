@@ -24,10 +24,12 @@ body {
 .v {
   text-align: left;
   margin-right: 50px;
-  font-size: 40px; }
+  font-size: 40px;
+  color: #A2B9AE; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #A2B9AE; }
 
 .newAppointmentTitle {
   text-align: center;
@@ -82,5 +84,8 @@ a {
   font-family: Raleway, sans-serif;
   font-size: 25px;
   padding-top: 19px; }
+  .saveAptButton a {
+    color: white;
+    text-decoration: none; }
 
 /*# sourceMappingURL=newApt.css.map */

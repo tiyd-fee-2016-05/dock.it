@@ -65,6 +65,11 @@ a {
     margin-right: auto;
     height: 55px;
     padding-bottom: 10px; }
+    .container header .fa {
+      font-size: .4em;
+      padding-left: 1px;
+      color: black;
+      opacity: .5; }
     .container header .header {
       font-size: 2em;
       display: inline-block;
@@ -85,8 +90,9 @@ a {
 
 .search {
   margin-top: 10px;
-  margin-left: 20px;
-  margin-bottom: 20px; }
+  padding-left: 20px;
+  padding-bottom: 20px;
+  z-index: 100; }
   .search .searchBox {
     text-align: left;
     font-size: 1.2em;
@@ -94,6 +100,11 @@ a {
     width: 90%;
     padding-right: 10px;
     opacity: .5; }
+
+.content {
+  overflow-y: auto;
+  height: 80%;
+  z-index: -1; }
 
 .weather {
   display: inline-block;
@@ -110,6 +121,9 @@ a {
     padding-bottom: 5px;
     text-align: center; }
 
+a {
+  z-index: 0; }
+
 .appointment {
   display: inline-block;
   vertical-align: top;
@@ -119,7 +133,8 @@ a {
   margin-right: auto;
   margin-top: 40px;
   margin-bottom: 10px;
-  background: white; }
+  background: white;
+  z-index: -1; }
   .appointment .aptContent {
     display: inline-block;
     color: green;
