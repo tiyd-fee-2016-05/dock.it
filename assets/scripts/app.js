@@ -1,3 +1,35 @@
+var mainApp = angular.module('mainApp',['ngRoute']);
+
+mainApp.config(function($routeProvider){
+  $routeProvider
+
+  .when ('/frontPage', {
+    templateUrl: 'index/frontPage.html'
+    // controller: 'FrontPage'
+  })
+  .when ('/newApt', {
+    templateUrl: 'index/newApt.html'
+    // controller: 'NewAppointment'
+  })
+  .when ('/viewApt', {
+    templateUrl: 'index/viewApt.html'
+    // controller:'ViewAppointment'
+  })
+  .when ('/editApt',{
+    templateUrl: 'index/editApt.html'
+    // controller: 'EditAppointment'
+  })
+  .otherwise({
+    redirectTo:'/frontPage'
+  });
+});
+
+// mainApp.controller()
+
+
+
+
+// -------------------------------------
 appointments = JSON.parse(localStorage.getItem('appointments'));
 var sortedAppointments = appointments.sort(function(a,b){
   appointments = JSON.parse(localStorage.getItem('appointments'));
