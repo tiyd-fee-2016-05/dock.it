@@ -1,28 +1,17 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
 
-    <!-- <meta http-equiv="refresh" content=".1" /> -->
-    <title>dock.it</title>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/styles/frontPage.css">
-  </head>
-  <body>
     <div class="phoneWarning">
         <h1>Please use </br>dock<i class="fa fa-anchor" aria-hidden="true"></i>it</br>on your mobile device.</br></br><i class="fa fa-mobile fa-5x" aria-hidden="true"></i></h1>
     </div>
     <div class="container">
       <header>
         <h1 class="header">dock<i class="fa fa-anchor" aria-hidden="true"></i>it</h1>
-        <h1 class="newApt"><a href="newApt.html">+ </a> </h1>
+        <h1 class="newApt"><a href="#/newApt">+ </a> </h1>
       </header>
       <form class="search">
         <input class="searchBox" placeholder='&#xf002'>
         </input>
       </form>
-      <div class="content">
+      <div class="content" ng-controller="frontCtlr">
         <!-- <div class="weather">
           <p class="time">5pm</p>
           <img src="#">
@@ -60,8 +49,4 @@
 
       </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="../assets/scripts/app.js"></script>
-    <!-- <script src="../assets/scripts/viewApt.js"></script> -->
-  </body>
-</html>
+    <!-- <script src="assets/scripts/app.js"></script> -->

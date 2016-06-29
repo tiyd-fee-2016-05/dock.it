@@ -1,3 +1,25 @@
+var dockIt = angular.module("dockIt",['ngRoute']);
+dockIt.config(function($routeProvider){
+  $routeProvider
+    .when('/frontPage',{
+      templateUrl: 'index/frontPage.html',
+      conroller: 'frontCtlr'
+    })
+    .when('/newApt',{
+      templateUrl: 'index/newApt.html'
+    })
+    .when('/editApt',{
+      templateUrl: 'index/editApt.html'
+    })
+    .when('/viewApt',{
+      templateUrl: 'index/viewApt.html'
+    })
+    .otherwise({
+      redirectTo: '/frontPage'
+    });
+});
+
+
 appointments = JSON.parse(localStorage.getItem('appointments'));
 var sortedAppointments = appointments.sort(function(a,b){
   appointments = JSON.parse(localStorage.getItem('appointments'));
@@ -9,16 +31,21 @@ localStorage.setItem('appointments', JSON.stringify(sortedAppointments))
 // console.log(appointments.date[i]);
  console.log(sortedAppointments)
 var idNumber = 0
-$(document).ready(function(){
+// $(document).ready(function(){
   appointments = JSON.parse(localStorage.getItem('appointments'));
   // console.log(JSON.parse(localStorage.getItem('appointments').date));
 
 
-  for(var i= 0; i < appointments.length ; i++)
-  $(".content").append(
-    '<a href="viewApt.html"><div class="weather" id="' + i + '"><p class="time">' + appointments[i].time + '</p></div>' +
-    '<div class="appointment" id="'+ i +'"><div class="aptContent" id="'+ i +'"><p class="aptTitle">' + appointments[i].description +'</p><p class="location">' + appointments[i].street + ' ' + appointments[i].location + '</p></div></div></a>'
-  );
+//   for(var i= 0; i < appointments.length ; i++){
+//
+//   $(".content").append(
+//     '<a href="viewApt.html"><div class="weather" id="' + i + '"><p class="time">' + appointments[i].time + '</p></div>' +
+//     '<div class="appointment" id="'+ i +'"><div class="aptContent" id="'+ i +'"><p class="aptTitle">' + appointments[i].description +'</p><p class="location">' + appointments[i].street + ' ' + appointments[i].location + '</p></div></div></a>'
+//   );
+//   console.log(i);
+//   console.log(appointments[i]);
+// }
+// });
   // for(var z= 0; z < appointments.length ; z++)
   // console.log(appointments[z].time);
   $(".appointment").click(function(){
@@ -30,17 +57,18 @@ $(document).ready(function(){
   });
   console.log(appointments);
   console.log("hello");
-});
+
 $(".searchBox").keydown(function(){
   $(".searchBox").css("text-align" , "left");
   if ($(".searchBox").val() === "") {
     $(".searchBox").css("text-align", "right");
     $(".content").html("");
-    for(var i= 0; i < appointments.length ; i++)
+    for(var i= 0; i < appointments.length ; i++){
     $(".content").append(
       '<div class="weather" id="' + i + '"><p class="time">' + appointments[i].time + '</p></div>' +
       '<div class="appointment" id="'+ i +'"><div class="aptContent" id="'+ i +'"><p class="aptTitle">' + appointments[i].description +'</p><p class="location">' + appointments[i].street + ' ' + appointments[i].location + '</p></div></div>'
     );
+  }
   }
 });
 // for (var x = 0; x <= 4; x++)
@@ -73,3 +101,19 @@ $(".search").submit(function(e){
     console.log("This works");
   }
 })
+angular.module('dockIt').controller('frontCtlr', ['$scope',function($scope){
+  $scope.load = function(){
+    for(var i= 0; i < appointments.length ; i++){
+    // $("body").append("<p> BLOOOOOOD</p>");
+    $(".content").append(
+      '<a href="#/viewApt"><div class="weather" id="' + i + '"><p class="time">' + appointments[i].time + '</p></div>' +
+      '<div class="appointment" id="'+ i +'"><div class="aptContent" id="'+ i +'"><p class="aptTitle">' + appointments[i].description +'</p><p class="location">' + appointments[i].street + ' ' + appointments[i].location + '</p></div></div></a>'
+    )
+    console.log(i);
+    console.log(appointments[i]);
+  };
+}
+  $scope.load();
+}]);
+
+// console.log(i);
